@@ -7,7 +7,7 @@ export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="w-screen bg-amber-300">
+    <div className="w-full fixed top-0 bg-amber-300">
       <div className="flex justify-between">
         <div className="flex justify-center items-center px-2">
           <h1 className="font-playfair ">Talha Abdurehman</h1>
@@ -17,7 +17,7 @@ export default function Navigation() {
         </div>
       </div>
       <AnimatePresence mode="wait">
-        {isOpen && <Loading key={"menu"} />}
+        {isOpen && <Loading onClose={() => setIsOpen(false)} key={"menu"} />}
       </AnimatePresence>
     </div>
   );

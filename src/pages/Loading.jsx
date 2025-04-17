@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 // eslint-disable-next-line no-unused-vars
 import { motion, cubicBezier } from "framer-motion";
 
-export default function Loading() {
+export default function Loading({ onClose }) {
   const customEase = cubicBezier(0.43, 0.13, 0.23, 0.96);
 
   const menuVariants = {
@@ -11,7 +11,7 @@ export default function Loading() {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.9,
+        duration: 0.7,
         ease: customEase,
       },
     },
@@ -21,7 +21,6 @@ export default function Loading() {
       transition: {
         duration: 1,
         ease: customEase,
-        opacity: { duration: 0.7 },
       },
     },
   };
@@ -32,13 +31,16 @@ export default function Loading() {
       initial="hidden"
       animate="visible"
       exit="exit"
-      className="w-screen h-screen fixed inset-0 bg-black flex flex-col items-center justify-center gap-3"
+      className="w-screen h-screen fixed inset-0 bg-black flex flex-col items-center justify-center gap-6"
     >
       <NavLink
         to={"/"}
+        onClick={onClose}
         className={({ isActive }) =>
-          ` text-7xl text-center hover:-translate-y-3 transition-all duration-300 ease-out ${
-            isActive ? "w-screen text-black bg-white" : "text-white bg-black"
+          ` text-5xl text-center hover:-translate-y-3 transition-all duration-300 ease-out ${
+            isActive
+              ? "w-screen text-black bg-white py-1"
+              : "text-white bg-black"
           }`
         }
       >
@@ -47,20 +49,26 @@ export default function Loading() {
 
       <NavLink
         to={"/about"}
+        onClick={onClose}
         className={({ isActive }) =>
-          `text-white text-7xl ${
-            isActive ? "bg-white w-screen" : ""
-          } hover:-translate-y-3 transition-all duration-300 ease-out`
+          ` text-5xl text-center hover:-translate-y-3 transition-all duration-300 ease-out ${
+            isActive
+              ? "w-screen text-black bg-white py-2"
+              : "text-white bg-black"
+          }`
         }
       >
         ABOUT
       </NavLink>
       <NavLink
         to={"/work"}
+        onClick={onClose}
         className={({ isActive }) =>
-          `text-white text-7xl ${
-            isActive ? "border-b-2 border-b-white" : ""
-          } hover:-translate-y-3 transition-all duration-300 ease-out`
+          ` text-5xl text-center hover:-translate-y-3 transition-all duration-300 ease-out ${
+            isActive
+              ? "w-screen text-black bg-white py-2"
+              : "text-white bg-black"
+          }`
         }
       >
         WORK
