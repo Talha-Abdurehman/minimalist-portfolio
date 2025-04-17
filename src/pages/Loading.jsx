@@ -1,8 +1,39 @@
 import { NavLink } from "react-router-dom";
+// eslint-disable-next-line no-unused-vars
+import { motion, cubicBezier } from "framer-motion";
 
 export default function Loading() {
+  const customEase = cubicBezier(0.43, 0.13, 0.23, 0.96);
+
+  const menuVariants = {
+    hidden: { opacity: 0, y: -3000 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.9,
+        ease: customEase,
+      },
+    },
+    exit: {
+      opacity: 1,
+      y: -3000,
+      transition: {
+        duration: 1,
+        ease: customEase,
+        opacity: { duration: 0.7 },
+      },
+    },
+  };
+
   return (
-    <div className="w-screen h-screen fixed inset-0 bg-black flex flex-col items-center justify-center gap-3">
+    <motion.div
+      variants={menuVariants}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+      className="w-screen h-screen fixed inset-0 bg-black flex flex-col items-center justify-center gap-3"
+    >
       <NavLink
         to={"/"}
         className={({ isActive }) =>
@@ -34,6 +65,6 @@ export default function Loading() {
       >
         WORK
       </NavLink>
-    </div>
+    </motion.div>
   );
 }

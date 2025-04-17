@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Loading from "../pages/Loading";
 import NavMenu from "./NavMenu";
+import { AnimatePresence } from "framer-motion";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,7 +16,9 @@ export default function Navigation() {
           <NavMenu />
         </div>
       </div>
-      <div>{isOpen && <Loading />}</div>
+      <AnimatePresence mode="wait">
+        {isOpen && <Loading key={"menu"} />}
+      </AnimatePresence>
     </div>
   );
 }
