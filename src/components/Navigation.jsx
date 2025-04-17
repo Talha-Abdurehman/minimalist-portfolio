@@ -7,7 +7,7 @@ export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="w-full fixed top-0 bg-amber-300">
+    <div className="w-full fixed top-0">
       <div className="flex justify-between">
         <div className="flex justify-center items-center px-2">
           <h1 className="font-playfair ">Talha Abdurehman</h1>

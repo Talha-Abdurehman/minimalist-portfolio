@@ -73,6 +73,19 @@ export default function Loading({ onClose }) {
       >
         WORK
       </NavLink>
+      <NavLink
+        to={"/hire"}
+        onClick={onClose}
+        className={({ isActive }) =>
+          ` text-5xl text-center hover:-translate-y-3 transition-all duration-300 ease-out ${
+            isActive
+              ? "w-screen text-black bg-white py-2"
+              : "text-white bg-black"
+          }`
+        }
+      >
+        HIRE ME
+      </NavLink>
     </motion.div>
   );
 }
