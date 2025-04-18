@@ -22,11 +22,11 @@ export default function NavMenu() {
           ${
             isOpened
               ? isHovered
-                ? "bg-white"
+                ? "bg-amber-50"
                 : "bg-black"
               : isHovered
               ? "bg-black"
-              : "bg-white"
+              : "bg-amber-50"
           }`}
         onClick={handleOpen}
       >
@@ -37,16 +37,16 @@ export default function NavMenu() {
               isOpened
                 ? isHovered
                   ? "bg-black"
-                  : "bg-white"
+                  : "bg-amber-50"
                 : isHovered
-                ? "bg-white"
+                ? "bg-amber-50"
                 : "bg-black"
             }`}
         ></span>
         <span
           className={` absolute h-1 w-10 rounded-2xl transition-all ease-in-out duration-150
             ${isOpened ? "opacity-0" : "opacity-100"}
-            ${isHovered ? "bg-white" : "bg-black"}`}
+            ${isHovered ? "bg-amber-50" : "bg-black"}`}
         ></span>
         <span
           className={`absolute h-1  w-10 rounded-2xl transition-all ease-in-out duration-150
@@ -55,9 +55,9 @@ export default function NavMenu() {
              isOpened
                ? isHovered
                  ? "bg-black"
-                 : "bg-white"
+                 : "bg-amber-50"
                : isHovered
-               ? "bg-white"
+               ? "bg-amber-50"
                : "bg-black"
            }`}
         ></span>
