@@ -40,7 +40,7 @@ export default function Loading({ onClose }) {
           ` text-5xl text-center hover:-translate-y-3 transition-all duration-300 ease-out ${
             isActive
               ? "w-screen text-black bg-amber-50 py-1"
-              : "text-white bg-black"
+              : "text-amber-50 bg-black"
           }`
         }
       >
@@ -54,7 +54,7 @@ export default function Loading({ onClose }) {
           ` text-5xl text-center hover:-translate-y-3 transition-all duration-300 ease-out ${
             isActive
               ? "w-screen text-black bg-amber-50 py-2"
-              : "text-white bg-black"
+              : "text-amber-50 bg-black"
           }`
         }
       >
@@ -67,7 +67,7 @@ export default function Loading({ onClose }) {
           ` text-5xl text-center hover:-translate-y-3 transition-all duration-300 ease-out ${
             isActive
               ? "w-screen text-black bg-amber-50 py-2"
-              : "text-white bg-black"
+              : "text-amber-50 bg-black"
           }`
         }
       >
@@ -80,7 +80,7 @@ export default function Loading({ onClose }) {
           ` text-5xl text-center hover:-translate-y-3 transition-all duration-300 ease-out ${
             isActive
               ? "w-screen text-black bg-amber-50 py-2"
-              : "text-white bg-black"
+              : "text-amber-50 bg-black"
           }`
         }
       >
