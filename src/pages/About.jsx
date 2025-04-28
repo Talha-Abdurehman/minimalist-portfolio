@@ -16,7 +16,15 @@ export default function About() {
             I am a dedicated MERN Stack developer specializing in building
             elegant, minimalist, and visually compelling web experiences. With a
             strong emphasis on performance, aesthetics, and fluid animations.
+            <br />I craft digital solutions that not only meet business goals
+            but also leave a lasting impression. I am passionate about creating
+            websites and applications that elevate brands and deliver seamless
+            user experiences.
           </p>
+        </div>
+
+        <div>
+          <img src="/talha.jpg" alt="" />
         </div>
       </main>
     </>
