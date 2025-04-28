@@ -5,10 +5,8 @@ import Navigation from "./components/Navigation";
 export default function App() {
   return (
     <>
-      <Routes>
-        <Route index Component={Home} />
-        <Route path="/about" Component={About} />
-      </Routes>
+      <Home />
+      <About />
     </>
   );
 }
