@@ -27,24 +27,26 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="w-full pt-10 flex flex-col justify-center  px-4">
+      <section className="w-full py-10 flex flex-col justify-center  px-4">
         <div className="pt-6  flex justify-between items-center">
           <h1 className="text-sm">
-            /Folio: <span className="font-semibold ">01</span>
+            /Folio <br />
+            <span className="font-semibold ">01</span>
           </h1>
 
           <h1 className="text-sm">
-            /Availability: <span className="font-semibold ">2025</span>
+            /Availability
+            <br /> <span className="font-semibold ">2025</span>
           </h1>
-        </div>
-        <div className="pb-6 flex justify-between items-center">
           <h1 className="text-sm">
-            /Contact:{" "}
+            /Contact
+            <br />
             <span className="font-semibold">talhakyle124@gmail.com</span>{" "}
           </h1>
 
           <h1 className="text-sm">
-            /Copyright:{" "}
+            /Copyright
+            <br />
             <span className="font-semibold">@{date.getFullYear()}</span>
           </h1>
         </div>
