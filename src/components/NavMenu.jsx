@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function NavMenu() {
+export default function NavMenu({ activeSection }) {
   const [isOpened, setIsOpened] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
 

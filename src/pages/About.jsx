@@ -3,7 +3,7 @@ import Navigation from "../components/Navigation";
 export default function About() {
   return (
     <>
-      <main className="bg-black w-full px-4 py-10 flex flex-col justify-center gap-4">
+      <main className="bg-black w-full px-4 py-10 flex flex-col justify-center gap-4 rounded-3xl">
         <div>
           <h1 className="font-playfair text-amber-50 text-4xl">
             ABOUT<br></br>

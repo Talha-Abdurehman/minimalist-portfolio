@@ -5,9 +5,7 @@ export default function Home() {
   return (
     <div className="flex flex-col justify-between bg-amber-50 w-full h-screen">
       {/* NAVIGATION BAR AND MENU */}
-      <nav>
-        <Navigation></Navigation>
-      </nav>
+      <nav></nav>
 
       {/* MAIN CONTENT SECTION */}
       <section className="w-full pt-10 flex flex-col justify-center  px-4">
