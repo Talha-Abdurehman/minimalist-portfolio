@@ -31,7 +31,7 @@ export default function Loading({ onClose }) {
       initial="hidden"
       animate="visible"
       exit="exit"
-      className="w-screen h-screen fixed inset-0 bg-black flex flex-col items-center justify-center gap-6"
+      className="w-screen h-screen fixed inset-0 bg-neutral-900 flex flex-col items-center justify-center gap-6"
     >
       <NavLink
         to={"/"}
@@ -39,8 +39,8 @@ export default function Loading({ onClose }) {
         className={({ isActive }) =>
           ` text-5xl text-center hover:-translate-y-3 transition-all duration-300 ease-out ${
             isActive
-              ? "w-screen text-black bg-amber-50 py-1"
-              : "text-amber-50 bg-black"
+              ? "w-screen text-neutral-900 bg-amber-50 py-1"
+              : "text-amber-50 bg-neutral-900"
           }`
         }
       >
@@ -53,8 +53,8 @@ export default function Loading({ onClose }) {
         className={({ isActive }) =>
           ` text-5xl text-center hover:-translate-y-3 transition-all duration-300 ease-out ${
             isActive
-              ? "w-screen text-black bg-amber-50 py-2"
-              : "text-amber-50 bg-black"
+              ? "w-screen text-neutral-900 bg-amber-50 py-2"
+              : "text-amber-50 bg-neutral-900"
           }`
         }
       >
@@ -66,8 +66,8 @@ export default function Loading({ onClose }) {
         className={({ isActive }) =>
           ` text-5xl text-center hover:-translate-y-3 transition-all duration-300 ease-out ${
             isActive
-              ? "w-screen text-black bg-amber-50 py-2"
-              : "text-amber-50 bg-black"
+              ? "w-screen text-neutral-900 bg-amber-50 py-2"
+              : "text-amber-50 bg-neutral-900"
           }`
         }
       >
@@ -79,8 +79,8 @@ export default function Loading({ onClose }) {
         className={({ isActive }) =>
           ` text-5xl text-center hover:-translate-y-3 transition-all duration-300 ease-out ${
             isActive
-              ? "w-screen text-black bg-amber-50 py-2"
-              : "text-amber-50 bg-black"
+              ? "w-screen text-neutral-900 bg-amber-50 py-2"
+              : "text-amber-50 bg-neutral-900"
           }`
         }
       >

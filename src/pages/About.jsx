@@ -3,9 +3,9 @@ import Navigation from "../components/Navigation";
 export default function About() {
   return (
     <>
-      <main className="bg-black w-full px-4 py-10 flex flex-col justify-center gap-4 rounded-3xl">
+      <main className="bg-neutral-900 w-full px-4 py-10 flex flex-col justify-center gap-4 rounded-3xl">
         <div>
-          <h1 className="font-playfair text-amber-50 text-4xl">
+          <h1 className="font-playfair text-amber-50 text-5xl">
             ABOUT<br></br>
             <span className="italic">ME</span>
           </h1>
@@ -24,7 +24,12 @@ export default function About() {
         </div>
 
         <div>
-          <img src="/talha.jpg" alt="" />
+          <img
+            src="/talha.jpg"
+            loading="lazy"
+            alt="Talha image"
+            className="rounded-3xl"
+          />
         </div>
       </main>
     </>

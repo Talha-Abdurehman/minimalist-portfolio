@@ -18,14 +18,14 @@ export default function NavMenu({ activeSection }) {
         onMouseLeave={() => {
           setIsHovered(false);
         }}
-        className={`relative w-10 flex items-end justify-center cursor-pointer  transition-all duration-150 p-8 z-20 
+        className={`relative w-10 flex items-end justify-center cursor-pointer  transition-all duration-150 p-10 z-20 
           ${
             isOpened
               ? isHovered
                 ? "bg-amber-50"
-                : "bg-black"
+                : "bg-neutral-900"
               : isHovered
-              ? "bg-black"
+              ? "bg-neutral-900"
               : "bg-amber-50"
           }`}
         onClick={handleOpen}
@@ -36,17 +36,17 @@ export default function NavMenu({ activeSection }) {
             ${
               isOpened
                 ? isHovered
-                  ? "bg-black"
+                  ? "bg-neutral-900"
                   : "bg-amber-50"
                 : isHovered
                 ? "bg-amber-50"
-                : "bg-black"
+                : "bg-neutral-900"
             }`}
         ></span>
         <span
           className={` absolute h-1 w-10 rounded-2xl transition-all ease-in-out duration-150
             ${isOpened ? "opacity-0" : "opacity-100"}
-            ${isHovered ? "bg-amber-50" : "bg-black"}`}
+            ${isHovered ? "bg-amber-50" : "bg-neutral-900"}`}
         ></span>
         <span
           className={`absolute h-1  w-10 rounded-2xl transition-all ease-in-out duration-150
@@ -54,11 +54,11 @@ export default function NavMenu({ activeSection }) {
            ${
              isOpened
                ? isHovered
-                 ? "bg-black"
+                 ? "bg-neutral-900"
                  : "bg-amber-50"
                : isHovered
                ? "bg-amber-50"
-               : "bg-black"
+               : "bg-neutral-900"
            }`}
         ></span>
       </div>

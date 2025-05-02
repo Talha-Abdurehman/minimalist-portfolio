@@ -3,16 +3,16 @@ import Navigation from "../components/Navigation";
 export default function Home() {
   const date = new Date();
   return (
-    <div className="flex flex-col justify-between bg-amber-50 w-full h-screen">
+    <div className="flex flex-col justify-between items-center bg-amber-50 w-full h-screen">
       {/* NAVIGATION BAR AND MENU */}
       <nav></nav>
 
       {/* MAIN CONTENT SECTION */}
-      <section className="w-full pt-10 flex flex-col justify-center  px-4">
+      <section className="w-full pt-10 flex flex-col justify-center items-center gap-8 px-4">
         {/* HERO TITLE  */}
         <div className="w-full">
           <h1 className="text-4xl text-center">
-            Hi I'am{" "}
+            Hi I'm{" "}
             <span className="font-playfair italic font-semibold text-gray-500">
               Talha Abdurehman
             </span>{" "}
@@ -22,6 +22,17 @@ export default function Home() {
             </span>
             .
           </h1>
+        </div>
+        <div className="w-full flex flex-col gap-4">
+          <button
+            className="cursor-pointer border-2 border-black bg-neutral-900 text-amber-50 rounded-3xl px-10 py-2
+          hover:bg-neutral-900 hover:text-amber-50 transition-all duration-300 ease-in-out"
+          >
+            Hire Me
+          </button>
+          <button className="cursor-pointer border-2 border-black bg-amber-50 text-neutral-900 rounded-3xl px-10 py-2">
+            View Work
+          </button>
         </div>
       </section>
 
