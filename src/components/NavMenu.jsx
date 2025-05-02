@@ -18,7 +18,7 @@ export default function NavMenu({ activeSection }) {
         onMouseLeave={() => {
           setIsHovered(false);
         }}
-        className={`relative w-10 flex items-end justify-center cursor-pointer  transition-all duration-150 p-10 z-20 
+        className={`relative w-10 flex items-end justify-center cursor-pointer  transition-all duration-150 p-8 z-20 
           ${
             isOpened
               ? isHovered

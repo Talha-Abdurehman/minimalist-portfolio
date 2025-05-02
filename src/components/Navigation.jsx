@@ -15,7 +15,7 @@ export default function Navigation({ activeSection }) {
       }`}
     >
       <div className="flex justify-between items-center">
-        <div className="flex justify-center items-center p-6">
+        <div className="flex justify-center items-center p-4">
           <h1 className="font-playfair text-xl font-semibold ">
             Talha <span>Abdurehman</span>
           </h1>
