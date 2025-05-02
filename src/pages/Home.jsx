@@ -23,7 +23,7 @@ export default function Home() {
             .
           </h1>
         </div>
-        <div className="w-full flex flex-col gap-4">
+        <div className="w-full flex flex-col gap-2">
           <button
             className="cursor-pointer border-2 border-black bg-neutral-900 text-amber-50 rounded-3xl px-10 py-2
           hover:bg-neutral-900 hover:text-amber-50 transition-all duration-300 ease-in-out"

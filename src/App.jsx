@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import TechStack from "./pages/TechStack";
 import Navigation from "./components/Navigation";
 
 export default function App() {
@@ -36,6 +37,9 @@ export default function App() {
       </section>
       <section id="about" ref={aboutRef}>
         <About />
+      </section>
+      <section>
+        <TechStack />
       </section>
     </div>
   );

@@ -3,16 +3,16 @@ import Navigation from "../components/Navigation";
 export default function About() {
   return (
     <>
-      <main className="bg-neutral-900 w-full px-4 py-10 flex flex-col justify-center gap-4 rounded-3xl">
+      <main className="bg-neutral-900 w-full px-4 py-10 flex flex-col justify-center gap-4 rounded-t-3xl">
         <div>
-          <h1 className="font-playfair text-amber-50 text-5xl">
+          <h1 className="font-playfair text-amber-50 text-3xl">
             ABOUT<br></br>
             <span className="italic">ME</span>
           </h1>
         </div>
 
         <div>
-          <p className="font-sans text-xl font-light text-amber-50">
+          <p className="font-sans text-lg font-light text-amber-50 break-words">
             I am a dedicated MERN Stack developer specializing in building
             elegant, minimalist, and visually compelling web experiences. With a
             strong emphasis on performance, aesthetics, and fluid animations.
